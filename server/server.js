@@ -25,3 +25,9 @@ app.listen(PORT, () => {
 
 const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth", authRoutes);
+
+const menuRoutes = require('./routes/menuRoutes');
+app.use("/api/menu", menuRoutes);
+
+const tableRoutes = require('./routes/tableRoutes');
+app.use("/api/tables", tableRoutes);
